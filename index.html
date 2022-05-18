@@ -9,9 +9,60 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <title>Document</title>
+    <title>Bookmark Maker</title>
   </head>
   <body>
+
+    <section>
+      <div class="container p-5">
+        <h1 class="text-muted fw-bold">Bookmark</h1>
+        <hr>
+        <div class="form-info rounded-3 text-center p-5">
+          <h2 class="pb-4">Bookmark your favorite sites</h2>
+          <label class="form-label" for="siteName">Site Name</label>
+          <input  type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+          <label class="form-label mt-3" for="siteUrl">Site URL</label>
+          <input  type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+          <button onclick="addBookmark()" id="add" class="btn btn-success mt-3">Add Bookmark</button>
+        </div>
+        <div class="table-info rounded-3 shadow mt-4 p-5">
+          <table class="table text-center">
+            <thead>
+              <th>Index</th>
+              <th>Bookmark Name</th>
+              <th>Visit</th>  
+              <th>Delete</th>
+            </thead>
+            <tbody id="tdata">
+              
+
+              
+
+            </tbody>
+
+
+
+          </table>
+
+
+
+
+        </div>
+
+
+
+        <hr>
+        <p><i class="fa-solid h4 fa-copyright"></i></p>
+
+
+
+      </div>
+
+
+    </section>
+
+
+
     <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
